@@ -11,7 +11,7 @@ Module.register("MMM-Housekeeping", {
             'CSO Partner'
         ];
         var wrapper = document.createElement("div");
-        wrapper.innerHTML = w%3;
+        wrapper.innerHTML = c[w%3] + ' is on duty this week';
         return wrapper;
     },
 });
