@@ -1,6 +1,13 @@
 
 Module.register("MMM-Housekeeping", {
 
+    start: function() {
+        const self = this;
+        setInterval(function() {
+            self.updateDom();
+        }, 86400000);
+    },
+
     // Override dom generator.
     getDom: function () {
         const d = Date.parse('18 Jan 2023 00:00:00 GMT');
